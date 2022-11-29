@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejemplo 1: Formularios</title>
+	<link rel="stylesheet" type="text/css" href="ejemplo1.css">
+	<link rel="stylesheet" type="text/css" href="ejemplo2.css">
+</head>
+<body>
+
+	<form action="ejemplo1.html" method="POST">
+		<fieldset>
+			<legend>Datos de usuario</legend>
+			<p>Usuario: <input id="nombre" type="text" name="usuario"></p>
+			<p>Contraseña: <input id="contrasena" type="password" name="contrasena"></p>
+		</fieldset>
+		<fieldset>
+			<legend>Datos personales</legend>
+			<p>Fecha de nacimiento <input id="fecha" type="date" name="fecha"><span id="mensajeFecha"></span></p>
+			<label>Género: </label>
+			<p><input type="radio" name="genero" value="Hombre"> Hombre</p>
+			<p><input type="radio" name="genero" value="Mujer"> Mujer</p>
+			<p><input type="radio" name="genero" value="Otro"> Otro</p>
+
+			<label for="niveles">Nivel educativo</label>
+			<select name="niveles" id="niveles">
+				<option value="ESO">Secundaria</option>
+				<option value="BACH">Bachillerato</option>
+				<option value="FP">Formación profesional</option>
+				<option value="UNI">Universitario</option>
+			</select>
+			<p>Adjunta tu DNI: <input type="file" name="DNI"></p>
+		</fieldset>
+		<fieldset>
+			<legend>Politica de privacidad</legend>
+			<p><input id="prueba" type="checkbox" name="terminos" value="aceptaTerminos"> Acepto los términos de uso</p>
+			<p><input type="checkbox" name="publicidad" value="aceptaPubli"> Acepto recibir publicidad</p>
+		</fieldset>
+		<br>
+		<input type="submit" name="enviar" value="Enviar formulario" class="botonEnviar">
+	</form>
+
+<script type="text/javascript" src="ejemplo2.js"></script>
+</body>
+</html>
